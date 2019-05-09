@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "env-cmd -f ./dev.env nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yixing Wang",
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^9.0.1",
+    "locus": "^2.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-sanitizer": "^1.0.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.11",
+    "request": "^2.88.0",
+    "semantic-ui": "^2.4.2"
+  }
+}

@@ -1,0 +1,16 @@
+<% include partials/header %>
+<h1>
+    You fell in love with <%= member.toUpperCase(); %>
+</h1>
+
+
+<% 
+    if(member.toLowerCase() === "sana"){
+%>
+    <p> No Sana, No Life! </p>
+<%  }else{  %>
+    <p> Why <%= member %> ?</p>
+<%  } %>
+<% include partials/footer %>
+
+
