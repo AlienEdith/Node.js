@@ -14,13 +14,14 @@ This repository contains all the examples or projects I made during my learning 
 ### Chat-app: https://chatroom-yxw.herokuapp.com/
 A Real-Time Chat-Room application with `socket.io`	
 
-### Task Manager
+### Task Manager: https://todoist-yxw.herokuapp.com/
 A full featured RESTful API as a todo list manager in Node.js (Express Framework) with mongoDB database.
 - Authentication is supported by `bcrypt` and `jsonwebtoken`
 - Upload user avatar is supported by `multer`
 - Database operation is supported by `mongoose`
 - Send email is supported by `sendgrid`
-  
+- For the complete project shown as the link above, the frontend was developmented in React ([React directory](https://github.com/AlienEdith/React/tree/master/task-manager))
+
 ### Yelpcamp: https://yelpcamp-yxw.herokuapp.com/	
 A full featured website written in Node.js (Express Framework + EJS template Engine) with mongoDB database. 
 - Register / Login / Authentication with local account, supported by `Passport` package
