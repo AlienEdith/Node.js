@@ -26,4 +26,6 @@ A full featured RESTful API as a todo list manager in Node.js (Express Framework
 A full featured website written in Node.js (Express Framework + EJS template Engine) with mongoDB database. 
 - Register / Login / Authentication with local account, supported by `Passport` package
 - CRUD operations of campgrounds and comments with `mongoose`.
+- Fuzzy Search
+- Pagination
 - Google Map display the location of campgrouds.
