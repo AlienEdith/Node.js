@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+
+<div class="container">
+    
+    <header class="jumbotron">
+        <div class="container">
+            <h1><i class="fas fa-campground"></i>Welcome to YelpCamp</h1>
+        	<p>View our hand-picked campgrounds from all over the world</p>
+        	<p>
+        	    <a class="btn btn-primary btn-large" href="/campgrounds/new">Add a new CampGround</a>
+                <form action="/campgrounds" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="search" placeholder="Search">
+                    <span class="input-group-btn"><button class="btn btn-default" type="submit">Search!</button></span>
+                </div>
+                </form>
+        	</p>
+        </div>
+    </header>
+    
+    <!-- style: style="display:flex; flex-wrap:wrap;"
+                deal with the pictures of different height-->
+    <div class="row  text-center" style="display:flex; flex-wrap:wrap;">
+        <% campGrounds.forEach(function(campGround){ %>
+        <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="<%= campGround.img %>" />
+                <div class="caption"><h4><%=campGround.name%></h4></div>
+                <p>
+                    <a href="/campgrounds/<%= campGround._id %>" class="btn btn-primary">More Info</a>
+                </p>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+    <% include ../partials/paginator %>
+
+</div>
+
+<% include ../partials/footer %>

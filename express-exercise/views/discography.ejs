@@ -1,0 +1,16 @@
+<% include partials/header %>
+<h1>The discography of TWICE</h1>
+
+<ul>
+    <% discography.forEach(function(disc){%> 
+        <li><%=disc.title%>: <%=disc.year%></li>
+    <% }) %> 
+</ul>
+
+<form action="/addDisc", method="POST">
+    <input type="text" name="newTitle" placeholder="title">
+    <input type="text" name="newYear" placeholder="year">
+    <button>Add Discograph</button>
+</form> 
+
+<% include partials/footer %>

@@ -1,0 +1,16 @@
+{{!-- Loader Partials with name --}}
+{{>header}}
+    <h1>{{ title }}</h1>
+    <h2>Hi</h2>
+    {{!-- <img src="/img/TWICE_TWICE_2_normal_cover_art.png"> --}}
+    <form id="weatherForm">
+        <label>Address</label>
+        <input id="weatherInput" name="address" type="text">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="weatherResult">
+        <p><span id="location"></span></p>
+        <p><span id="forecast"></span></p>
+        <span id="error"></span>
+    </div>
+{{>footer}}

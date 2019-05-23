@@ -1,0 +1,9 @@
+body {
+    padding-top: 70px;
+}
+i.fa-door-closed {
+    font-size: 2em;
+}
+#delete{
+    display: inline;
+}

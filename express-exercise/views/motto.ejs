@@ -1,0 +1,12 @@
+<% include partials/header %>
+<h1>The motto for Members </h1>
+
+<p>
+    <% posts.forEach(function(post){ %>
+    <ul>
+        <li><%= post.title %> by <%= post.author %></li>
+    </ul>
+    <% }) %>
+   
+</p>
+<% include partials/footer %>
