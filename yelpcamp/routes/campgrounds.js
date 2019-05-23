@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router({mergeParams: true});
 var request = require('request');
+var moment = require('moment');
 
 var Campground = require("../models/campground");
 var middleware = require("../middleware") //automatically load index.js when require a directory
@@ -78,7 +79,7 @@ router.get("/:id", (req, res) => {
             req.flash("error", "Campground not found");
             return res.redirect("/campgrounds");
         }
-        res.render("./campgrounds/show", {campground: campground, currentUser: req.user});
+        res.render("./campgrounds/show", {campground: campground, currentUser: req.user, moment});
     });
 });
 

@@ -19,12 +19,12 @@
     </header>
     
     <!-- style: style="display:flex; flex-wrap:wrap;"
-                deal with the pictures of different height-->
-    <div class="row  text-center" style="display:flex; flex-wrap:wrap;">
+                deal with the pictures of different height ???-->
+    <div class="row text-center">
         <% campGrounds.forEach(function(campGround){ %>
         <div class="col-md-4 col-sm-6">
             <div class="thumbnail">
-                <img src="<%= campGround.img %>" />
+                <img src="<%= campGround.img %>" style="height:200px"/>
                 <div class="caption"><h4><%=campGround.name%></h4></div>
                 <p>
                     <a href="/campgrounds/<%= campGround._id %>" class="btn btn-primary">More Info</a>

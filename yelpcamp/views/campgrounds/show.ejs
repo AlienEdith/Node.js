@@ -1,5 +1,4 @@
 <% include ../partials/header %>
-
 <div class="container">
     <div class="row">
         <div class="col-md-3">
@@ -32,11 +31,13 @@
             <div class="well">
                 <div class="text-right"><a href="/campgrounds/<%=campground._id%>/comments/new" class="btn btn-primary">Add Comment</a></div>
                 <hr>
-                <% campground.comments.forEach(function(comment){ %>
+                <% campground.comments.forEach(function(comment){ 
+                    const time = moment(comment.updatedAt).format("MMM D YYYY");
+                    %>
                     <div class="row">
                         <div class="col-md-12">
                             <strong><%=comment.author.username%></strong>
-                            <span class="pull-right">10 days ago</span>
+                            <span class="pull-right">Updated: <%=time%></span>
                             <p><%=comment.text%></p>
                             <% if(currentUser && (comment.author.id.equals(currentUser._id))){ %>
                                 <a href="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>/edit" class="btn btn-xs btn-warning">Edit</a>
