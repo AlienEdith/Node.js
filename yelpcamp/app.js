@@ -14,7 +14,7 @@ var connect_flash           =   require("connect-flash");
 var User = require("./models/user");
 
 var commentsRoutes = require("./routes/comments");
-var campgroundsRoutes = require("./routes/campground");
+var campgroundsRoutes = require("./routes/campgrounds");
 var authRoutes = require("./routes/auth");
 
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });

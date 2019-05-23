@@ -120,4 +120,4 @@ router.delete("/:id", middleware.isCampgroundAuthor, function(req, res){
 
 
 
-module.exports = router;
+module.exports = router
