@@ -1,5 +1,9 @@
 node_modules
 
+<<<<<<< HEAD
 *.env
 
 *.md
+=======
+*.env
+>>>>>>> d6db53e0ad367dbc56bd6454eee0f7b62fcc44e1

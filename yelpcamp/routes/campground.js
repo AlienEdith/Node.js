@@ -39,7 +39,6 @@ router.get('/', (req, res) => {
 router.get('/new',middleware.isLoggedIn, (req, res) => {
     res.render("./campgrounds/new");
 });
-
 // CREATE
 router.post("/",middleware.isLoggedIn, (req, res) => {
     var name = req.body.name;
@@ -49,7 +48,7 @@ router.post("/",middleware.isLoggedIn, (req, res) => {
     var author = {
         id: req.user._id,
         username: req.user.username
-    };
+    }
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${req.body.name}&key=${process.env.GOOGLE_MAP_KEY}`
     request({url, json: true}, (error, response) => {
             if(!error){
